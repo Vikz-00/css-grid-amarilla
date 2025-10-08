@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3</title>
+
+  <style>
+    body{
+      display: grid;
+      grid-template-columns: 200 repeat(2, 200px) ;
+      grid-template-rows: 125px repeat(2, 80px);
+      justify-content: center;
+      
+    }
+    section{
+      background-color: black;
+      color: black;
+      width: 200px;
+      border: solid 2px white;
+      text-align: center;
+    }
+    
+    .Cajita{
+      background-color: aquamarine;
+    }
+
+    .Cabeza{
+      grid-column: 1/4;
+      background-color: firebrick;
+      width: 600px;
+    }
+    .dani{
+      grid-row: 2/ span 3;
+      background-color: aquamarine ;
+      height: 125px ;
+    }
+  </style>
+</head>
+<body>
+  <section class="Cabeza">Celda 1</section>
+  <section class="dani">Celda 2</section>
+  <section class="Cajita">Celda 3</section>
+  <section class="Cajita">Celda 4</section>
+  <section class="Cajita">Celda 5</section>
+  <section class="Cajita">Celda 6</section>
+  
+</body>
+</html>
