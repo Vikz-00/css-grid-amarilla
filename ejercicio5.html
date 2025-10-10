@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicio 4</title>
+  <title>Ejercicio 5</title>
 
   <style>
     body{
       display: grid;
       grid-template-areas: 
-      "rap  rap rap"
-      "bal  ped3 yam4"
-      "bal  cub5 eri6"
+      "rap  rap yam yam"
+      "bal3  ped4 ped4  ped4"
+        "fre5   fre5    fre5    fre5"
       ;
-      grid-template-columns: 200 repeat(2, 200px) ;
-      grid-template-rows: 125px repeat(2, 80px);
+      grid-template-columns: repeat(4, 1fr) ;
       justify-content: center;
       
       
@@ -22,7 +21,7 @@
     section{
       background-color: tan;
       color: black;
-      width: 200px;
+      width: 300px;
       border: solid 2px white;
       text-align: center;
     }
@@ -32,28 +31,23 @@
     }
 
     .Cabeza{
-      grid-column: 1/4;
       background-color: firebrick;
-      width: 600px;
       grid-area: rap;
     }
     .dani{
       grid-row: 2/ span 3;
       background-color: aquamarine ;
       height: 125px ;
-      grid-area: bal;
+      grid-area: yam;
     }
     .Cajita3{
-      grid-area: ped3;
+      grid-area: bal3;
     }
     .Cajita4{
-      grid-area: yam4;
+      grid-area: ped4;
     }
     .Cajita5{
-      grid-area: cub5;
-    }
-    .Cajita6{
-      grid-area: eri6;
+      grid-area: fre5;
     }
   </style>
 </head>
@@ -63,7 +57,6 @@
   <section class="Cajita3">Celda 3</section>
   <section class="Cajita4">Celda 4</section>
   <section class="Cajita5">Celda 5</section>
-  <section class="Cajita6">Celda 6</section>
   
 </body>
 </html>
