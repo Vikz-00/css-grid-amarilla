@@ -1,62 +1,46 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicio 5</title>
-
-  <style>
-    body{
-      display: grid;
-      grid-template-areas: 
-      "rap  rap yam yam"
-      "bal3  ped4 ped4  ped4"
-        "fre5   fre5    fre5    fre5"
-      ;
-      grid-template-columns: repeat(4, 1fr) ;
-      justify-content: center;
-      
-      
-    }
-    section{
-      background-color: tan;
-      color: black;
-      width: 300px;
-      border: solid 2px white;
-      text-align: center;
-    }
+<meta charset="utf-8">
+<title>Ejercicio 5</title>
+<style>
+  .tabla{
+    font-family: sans-serif;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
     
-    .Cajita{
-      background-color: aquamarine;
-    }
+    margin: 0 auto;
+    width: 500px;
+  } 
+  .tabla div{
+    background: #474747;
+    color: white;
+    padding: 18px;
+    text-align: center;
+     
+  }
+  .cabecera{
+      grid-column: 1 / span 3;
+      grid-row: 1
+  }
+  .sidebar{
+      grid-column: 4;
+      grid-row: 1/ span 2;
+      justify-content: center;
+      align-items: center;
+  }
 
-    .Cabeza{
-      background-color: firebrick;
-      grid-area: rap;
-    }
-    .dani{
-      grid-row: 2/ span 3;
-      background-color: aquamarine ;
-      height: 125px ;
-      grid-area: yam;
-    }
-    .Cajita3{
-      grid-area: bal3;
-    }
-    .Cajita4{
-      grid-area: ped4;
-    }
-    .Cajita5{
-      grid-area: fre5;
-    }
-  </style>
+</style>
 </head>
 <body>
-  <section class="Cabeza">Celda 1</section>
-  <section class="dani">Celda 2</section>
-  <section class="Cajita3">Celda 3</section>
-  <section class="Cajita4">Celda 4</section>
-  <section class="Cajita5">Celda 5</section>
   
+<div class="tabla">
+  <div class="cabecera"> celda 1 </div>
+  <div class="sidebar"> celda 2</div>
+  <div> celda 3</div>
+  <div> celda 4</div>
+  <div> celda 5</div>
+</div>
 </body>
 </html>
